@@ -21,5 +21,8 @@ jobs:
       - name: Push to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/shortest-path-visualizer:latest
 
+      - name: Create Docker Volume
+        run: docker volume create shortest-path-visualizer
+
       - name: Trigger Deploy on Render
         run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
