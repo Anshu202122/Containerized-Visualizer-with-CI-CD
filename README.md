@@ -45,18 +45,19 @@ This project demonstrates a DevOps-enabled deployment pipeline for a frontend-ba
  ### 3. CI/CD Pipeline
 
 The GitHub Actions workflow automates the entire deployment lifecycle as follows:
+
 **Pipeline Steps**
-1. **Trigger**
+1. **Trigger:**
    - Activated on every push to the main branch.
 2. **Checkout and Build:**
-  - The repository is checked out.
-  - A Docker image of the application is built using the Dockerfile.
+   - The repository is checked out.
+   - A Docker image of the application is built using the Dockerfile.
 3. **Push to Docker Hub:**
-  - The image is tagged and pushed to your Docker Hub registry.
-  - This ensures the image is versioned, portable, and reusable across platforms.
+   - The image is tagged and pushed to your Docker Hub registry.
+   - This ensures the image is versioned, portable, and reusable across platforms.
 4. **Deploy to Render:**
-  - The Render platform fetches the latest image or repository code.
-  - The deployment is automatically triggered to update the live environment.
+   - The Render platform fetches the latest image or repository code.
+   - The deployment is automatically triggered to update the live environment.
 
 **What Happens on Each Commit to main**
 * Source code is checked out and built.
@@ -68,12 +69,12 @@ The GitHub Actions workflow automates the entire deployment lifecycle as follows
 ## How to Test the Deployed Application
 
 1. **Get the Live URL**
-  - Go to your Render Dashboard.
-  - Select your deployed service (e.g., shortest-path-visualizer).
-  - Copy the public Render URL of the application.
+   - Go to your Render Dashboard.
+   - Select your deployed service (e.g., shortest-path-visualizer).
+   - Copy the public Render URL of the application.
 2. **Open the Application in Your Browser**
-  - Paste the URL into your browser.
-  - The deployed frontend should load successfully.
+   - Paste the URL into your browser.
+   - The deployed frontend should load successfully.
 3. **Visualize the Shortest Path**
 
-To confirm the latest version is live, make a visual or text change in the code, push it to main, and watch the deployment update automatically via GitHub Actions.
+* To confirm the latest version is live, make a visual or text change in the code, push it to main, and watch the deployment update automatically via GitHub Actions.
