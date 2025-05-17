@@ -63,7 +63,7 @@ The GitHub Actions workflow automates the entire deployment lifecycle as follows
 * Source code is checked out and built.
 * Docker image is built locally.
 * Docker image is pushed to Docker Hub.
-* Render pulls latest version from GitHub and updates the cloud deployment.
+* Render pulls latest version from Docker Hub and updates the cloud deployment.
 
 
 ## How to Test the Deployed Application
