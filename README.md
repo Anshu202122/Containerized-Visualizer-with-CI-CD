@@ -39,8 +39,6 @@ This project demonstrates a DevOps-enabled deployment pipeline for a frontend-ba
   - docker build -t visualizer-app .
 * Run the Docker container:
   - docker run -p 8080:80 visualizer-app
-* Plan the infrastructure:
-  - terraform plan
 
  ### 3. CI/CD Pipeline
 
